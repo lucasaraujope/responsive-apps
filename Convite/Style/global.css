@@ -100,6 +100,10 @@ h3{
     font-weight: var(--fw-base);
 }
 
+h1{
+    font: var(--title);
+}
+
 a {
   text-decoration: none;
   color: inherit;
