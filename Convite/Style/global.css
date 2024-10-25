@@ -49,6 +49,7 @@
 
   /*FONT FAMILY*/
   --ff-poppins: "Poppins", sans-serif;
+  --ff-schoolbell: "Schoolbell", cursive;
 
   /*FONT SIZE*/
   --fs-base: 1rem;
@@ -57,12 +58,23 @@
   --fs-2xl: 2rem;
 
   /*FONT WEIGHT*/
-  --fw-base: 700;
+  --fw-regular: 400;
+  --fw-bold: 700;
 
-  --heading1: var(--fw-base) var(--fs-2xl) / 120% var(--ff-poppins);
-  --heading2: var(--fw-base) var(--fs-lg) / 120% var(--ff-poppins);
-  --heading3: var(--fw-base) var(--fs-md) / 120% var(--ff-poppins);
-  --heading4: var(--fw-base) var(--fs-base) / 120% var(--ff-poppins);
+
+  --heading1: var(--fw-bold) var(--fs-2xl) / 120% var(--ff-poppins);
+  --heading2: var(--fw-bold) var(--fs-lg) / 120% var(--ff-poppins);
+  --heading3: var(--fw-bold) var(--fs-md) / 120% var(--ff-poppins);
+  --heading4: var(--fw-bold) var(--fs-base) / 120% var(--ff-poppins);
+  --title: var(--fw-regular) var(--fs-md) / 100% var(--ff-schoolbell);
+
+
+  --py-base: 1.5rem;
+
+  --px-base: 1.25rem;
+  --px-md: 1.5rem;
+  --px-2xl: 3rem;  
+
 }
 
 html {
@@ -96,6 +108,14 @@ a {
 img{
     max-width: 100%;
     display: inline-block;
-  }
+}
 
+body{
+    background-color: black;
+}
+
+.div2{
+    padding-inline: 2rem;
+    color: #fff;
+}
 
