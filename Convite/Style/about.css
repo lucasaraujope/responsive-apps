@@ -1,0 +1,10 @@
+#about{
+    & header{
+        background-color: #fff;
+        justify-content: start;
+
+        & span{
+            font: var(--text);
+        }
+    }
+}

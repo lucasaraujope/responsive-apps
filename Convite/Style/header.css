@@ -3,6 +3,9 @@ header{
     background-color: var(--surface-secondary);
     & > div{    
         width: 12.6875;
+        & p {
+            font: var(--logo);
+        }
     }
 
 }

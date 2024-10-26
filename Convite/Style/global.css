@@ -63,10 +63,10 @@
 
 
   --heading1: var(--fw-bold) var(--fs-2xl) / 120% var(--ff-poppins);
-  --heading2: var(--fw-bold) var(--fs-lg) / 120% var(--ff-poppins);
-  --heading3: var(--fw-bold) var(--fs-md) / 120% var(--ff-poppins);
-  --heading4: var(--fw-bold) var(--fs-base) / 120% var(--ff-poppins);
-  --title: var(--fw-regular) var(--fs-md) / 100% var(--ff-schoolbell);
+  --text: var(--fw-regular) var(--fs-base) / 150% var(--ff-poppins)
+  --title: var(--fw-bold) var(--fs-lg) / 120% var(--ff-poppins);
+  --sub-title: var(--fw-bold) var(--fs-base) / 120% var(--ff-poppins);
+  --logo: var(--fw-regular) var(--fs-md) / 100% var(--ff-schoolbell);
 
 
   --py-base: 1.5rem;
@@ -92,6 +92,10 @@ body {
     overflow-x: hidden;
 }
 
+main{
+  background-color: var(--surface-primary);
+}
+
 h1,
 h2,
 h3{
@@ -101,8 +105,15 @@ h3{
 }
 
 h1{
-    font: var(--title);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-lg);
 }
+
+h2{
+    font: var(--sub-title);
+}
+
+
 
 a {
   text-decoration: none;
@@ -122,4 +133,5 @@ body{
     padding-inline: 2rem;
     color: #fff;
 }
+
 
