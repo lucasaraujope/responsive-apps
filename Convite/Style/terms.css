@@ -1,0 +1,45 @@
+.terms{
+    margin-bottom: 3rem;
+
+    position: relative;
+
+    & input{
+        all: unset;
+        position: absolute;
+        inset: 0;
+    }
+
+    .checkbox-image {
+        flex: 0 0 1.5rem;
+        height: 1.5rem;
+
+        background-image: url(../Assets/checkbox-unchecked.svg);
+    }
+
+
+    label strong{
+        font-weight: 500;
+        color: var(--stroke-highlight);
+    }
+    
+    span{
+        background-image: url(../Assets/checkbox-unchecked.svg);
+        background-repeat: no-repeat;
+        width: 1.5rem;
+        height: 1.5rem;
+        align-items: flex-start;
+    }
+
+    &:hover,
+    &:focus-within {
+        & .checkbox-image {
+            background-image: url(../Assets/checkbox-hover.svg);
+        }
+    }
+
+    &:has(:checked) .checkbox-image {
+            background-image: url(../Assets/checkbox-checked.svg);
+    }
+    
+
+}

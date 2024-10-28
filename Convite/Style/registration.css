@@ -1,0 +1,71 @@
+.registration-wrapper{
+    
+    padding-bottom: 3rem;
+   
+    
+    & .card{
+        position: relative;
+        border: 1px solid var(--stroke-default);
+        border-radius: 0.5rem;
+        display: grid;
+
+        height: 8rem;
+
+        padding: .5rem;
+
+
+        justify-items: center;
+        align-content: center;
+        
+
+       & .card-infos{
+        text-align: center;
+       }
+
+
+        & input,
+        & input:focus,
+        & input:hover{
+            all: unset;
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+
+        }
+
+       & .radio-image{
+            background-image: url(../Assets/circle.svg);
+            background-repeat: no-repeat;
+    
+            width: 1.5rem;
+            height: 1.5rem;
+            position: absolute;
+    
+            top: .5rem;
+            left: .5rem;
+        }
+
+        &:hover, &:focus-within{
+            border: 1px solid var(--stroke-highlight);
+    
+            & .radio-image{
+                background-image: url(../Assets/radio-hover.svg);
+            }
+        }
+    
+        &:has(:checked){
+            border: 2px solid var(--stroke-highlight);
+    
+            & .radio-image{
+                background-image: url(../Assets/radio-slected.svg);
+            }
+        }
+
+    
+    }
+
+    
+   
+    
+}
