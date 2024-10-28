@@ -136,6 +136,6 @@ img{
 
 legend {
   font: var(--sub-title);
-  margin-bottom: 1.25rem;
+  padding: 3rem 0 1.25rem 0;
 }
 

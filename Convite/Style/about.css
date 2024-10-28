@@ -1,4 +1,6 @@
 #about{
+    margin-top: 1.5rem;
+
     & header{
         background-color: #fff;
         justify-content: start;
