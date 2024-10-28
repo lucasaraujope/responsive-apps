@@ -28,7 +28,7 @@
         />
       </header>
 
-      <main class="container">
+      <main>
         <section id="about" class="grid gap-1.5 px-md">
           <header class="flex gap-0.5 items-center">
             <img src="Assets/icons/arrow-left-02.svg" alt="" />
@@ -45,7 +45,51 @@
         </section>
 
         <form action="">
-          
+          <fieldset class="info-wrapper grid gap-1.25">
+            <legend>Informações da criança</legend>
+            <div class="grid gap-0.25">
+              <label for="">Nome completo</label>
+              <input
+                type="text"
+                name="nome"
+                id="name"
+                placeholder="Qual o nome da criança"
+              />
+            </div>
+            <div class="grid gap-0.25">
+              <label for="">Data de nascimento</label>
+              <input
+                type="date"
+                name="nome"
+                id="name"
+                placeholder="06/05/2019"
+              />
+            </div>
+            <div class="grid gap-0.25">
+              <label for="">Sexo</label>
+              <select name="" id="">
+                <option value="">Feminino</option>
+                <option value="">Masculino</option>
+              </select>
+            </div>
+            <div class="grid gap-0 25">
+              <label for="">Informações médicas</label>
+              <textarea
+                name=""
+                id=""
+                placeholder="A criança tem alguma alergia, se sim, informe!"
+              ></textarea>
+            </div>
+            <div class="grid gap-0 5">
+              <label for="">Certidão de nascimento</label>
+              <div class="file-wrapper">
+                <input type="file" name="" id="" />
+                <img src="Assets/icons/cloud-upload.svg" alt="">
+                <p>Clique aqui para</p>
+                <p>Selecionar arquivos</p>
+              </div>
+            </div>
+          </fieldset>
         </form>
       </main>
     </div>
