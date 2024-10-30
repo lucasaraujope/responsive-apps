@@ -41,6 +41,14 @@
   --text-base: var(--fw-regular) var(--fs-base) / 170% var(--ff-pop);
   --text: var(--fw-regular) var(--fs) / 170% var(--ff-pop);
   --text-sm: var(--fw-regular) var(--fs-sm) / 170% var(--ff-pop);
+
+
+  /*    PADDINGS   */
+  --px-lg: 2rem;
+  --px-md: 1rem;
+
+
+  --py-md: 1rem;
 }
 
 html {
@@ -71,4 +79,17 @@ a {
 img {
   max-width: 100%;
   display: inline-block;
+}
+
+
+@media(width >= 80em){
+    :root{
+        /*    PADDINGS   */
+    --px-lg: 2rem;
+    --px-md: 1.5rem;
+    --px-sm: 1.25rem; 
+
+
+    --py-md: 1rem;
+    }
 }
