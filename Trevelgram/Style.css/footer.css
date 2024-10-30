@@ -1,0 +1,24 @@
+footer {
+  p {
+    text-align: center;
+  }
+
+  & > div {
+
+    & a {
+      text-decoration: none;
+      color: inherit;
+      cursor: pointer;
+    }
+  }
+}
+
+@media (width >= 80em) {
+  footer {
+    display: flex;
+    
+    & div{
+        margin-left: auto;
+    }
+  }
+}

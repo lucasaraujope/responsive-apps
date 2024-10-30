@@ -1,25 +1,30 @@
-header{
-    justify-content: space-between;
-
-    & ul {
-
-        & span{
-            background-image: url(../Assets/icons/MagnifyingGlass.svg);
-            width: 1.5rem;
-            height: 1.5rem;
-
-            &:hover{
-                background-image: url(../Assets/icons/MagnifyingGlass-hover.svg);
-            }
-        }
-
-        & li{
-            list-style: none;
-
-            &:hover{
-                color: var(--brand-color);
-                text-decoration: underline;
-            }
-        }
+header {
+  background-color: var(--skeleton-color);
+  & > div {
+    & nav {
+      justify-content: space-between;
     }
+  }
+
+  & ul {
+    & span {
+      background-image: url(../Assets/icons/MagnifyingGlass.svg);
+      width: 1.5rem;
+      height: 1.5rem;
+
+      &:hover {
+        background-image: url(../Assets/icons/MagnifyingGlass-hover.svg);
+      }
+    }
+
+    & li {
+      list-style: none;
+
+      &:hover {
+        color: var(--brand-color);
+        text-decoration: underline;
+      }
+    }
+  }
+
 }

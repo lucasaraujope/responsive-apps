@@ -1,18 +1,55 @@
 #about {
-    
+  & > div {
+    width: 17.5rem;
 
-    & > div{
-        width: 17.5rem;
+    & img {
+      width: 7.5rem;
+      height: 7.5rem;
 
-        & img{
-            width: 7.5rem;
-            height: 7.5rem;
-
-            object-fit: contain;
-        }
-
-        & p {
-            font-size: var(--fs);
-        }
+      object-fit: contain;
     }
+
+    & h1 {
+      margin-bottom: 0.5rem;
+    }
+
+    & p {
+      font-size: var(--fs);
+    }
+  }
+}
+
+@media (width >= 80em) {
+  #about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-inline: 0;
+
+    & > div {
+      display: flex;
+      width: 37rem;
+
+      & img {
+        width: 11rem;
+        height: 11rem;
+      }
+
+      & h1 {
+        margin-bottom: 0.5rem;
+      }
+
+      & p {
+        font-size: 0.95rem;
+      }
+    }
+
+    & ul {
+      width: 17.5rem;
+      height: 6.5rem;
+
+      font-size: var(--fs);
+    }
+  }
 }
