@@ -1,14 +1,24 @@
 .px-lg{
-    padding-inline: var(--px-lg);
+    padding-block: var(--px-lg);
 }
 
 .px-md{
-    padding-inline: var(--px-md);
+    padding-block: var(--px-md);
+}
+
+.px-sm{
+    padding-block: var(--px-sm);
+}
+
+.py-lg{
+    padding-inline: var(--py-lg);
 }
 
 .py-md{
-    padding-block: var(--py-md);
+    padding-inline: var(--py-md);
 }
+
+
 
 .flex{
     display: flex;
@@ -18,18 +28,36 @@
     display: grid;
 }
 
-.gap-1{
-    gap: 1rem;
-}
-
 .gap-0\.5{
     gap: .5rem;
+}
+
+.gap-1{
+    gap: 1rem;
 }
 
 .gap-1\.125{
     gap: 1.125rem;
 }
 
+.gap-1\.5{
+    gap: 1.5rem;
+}
+
+.items-center{
+    align-items: center;
+}
+
+.just-center{
+    justify-content: center;
+}
+
+.desktop-only{
+    display: none;
+}
+
 @media (width >= 80em){
-    
+    .desktop-only{
+        display:inherit;
+    } 
 }

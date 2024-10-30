@@ -47,7 +47,7 @@
   --px-lg: 2rem;
   --px-md: 1rem;
 
-
+  --py-lg: 2rem;
   --py-md: 1rem;
 }
 
@@ -62,7 +62,7 @@ html {
 }
 
 body {
-  background-color: var(--skeleton-color);
+  background-color: var(--bg-color);
   overflow-x: hidden;
 }
 
@@ -71,10 +71,7 @@ h1 {
   color: var(--text-color-primary);
 }
 
-a {
-  font: inherit;
-  text-decoration: none;
-}
+
 
 img {
   max-width: 100%;
